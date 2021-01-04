@@ -7,22 +7,6 @@ Part of Machine Data Learning course at IIIT Hyderabad.
 
 Over the course of the evolution of the population, we had changed out fitness functions a few times depending on where our vectors were converging to.
 Some of the fitness function used were:
-
-Let us denote the Train error as $T$ and Validation error as $V$.
-
-1. $-(V + | T -V |)$
-    - To reduce the error while making sure that the GA does not overfit to the Validation dataset.
-    
-2. $ -(T + | T-V|)$
-    - To focus on decreasing the train error with higher priority than validation error.
-    - This would give the same performance as 1.
-
-3. $ -(V + 2 \times |T-V|) $
-    - To penalise the difference of $T$ and $V$ more such that they remain closer together.
-    
-4. $ - ( V + T + |T - V|) $
-    - This would be the perfect fitness measure such that both Errors decrease and their difference is in control as well.
-    - Though it was harder for the population to evolve using this fitness function since it hopes everything to go well together at the same time.
     
 ## Crossover functions:
 
